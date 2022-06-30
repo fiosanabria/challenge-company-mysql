@@ -22,7 +22,7 @@ describe("Test database querys", () => {
     expect(cantidadEmpleados).toBe(484);
   });
 
-  test("Deberian existir 437 empleadas", async () => {
+  test("Deberian existir 437 empleados", async () => {
     const cantidadEmpleados = await db.getNumberOfMaleEmployees();
     expect(cantidadEmpleados).toBe(437);
   });
